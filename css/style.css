@@ -3,7 +3,7 @@
    Playfair Display + Inter
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400;1,600;1,700&display=swap');
 /* font-display handled by Google Fonts &display=swap param */
 
 /* ============================================
@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Lora', Georgia, serif;
   background: var(--green-deep);
   color: var(--white-dim);
   -webkit-font-smoothing: antialiased;
@@ -785,20 +785,7 @@ footer .logo-img {
 }
 
 .section-watermark {
-  position: absolute;
-  top: -60px;
-  right: -20px;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
-  font-size: clamp(6rem, 12vw, 11rem);
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(201,160,82,0.22);
-  pointer-events: none;
-  user-select: none;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  z-index: 0;
+  display: none;
 }
 
 .mission-image-col {
