@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — ALPFA at William & Mary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-text">ALPFA <em>W&amp;M</em></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="sponsors.html">Sponsors</a>
+      </div>
+      <a href="membership.html" class="nav-cta">Join Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="events.html">Events</a>
+    <a href="membership.html">Membership</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="membership.html" class="btn btn-gold" style="margin-top:8px;text-align:center;">Join Now</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-label" data-reveal="up">What's Happening</span>
+        <h1 data-reveal="up" style="transition-delay:.1s">Events</h1>
+        <p data-reveal="up" style="transition-delay:.2s">Workshops, networking nights, conferences, and more</p>
+      </div>
+    </div>
+
+    <!-- UPCOMING EVENTS -->
+    <section class="section section-mid cut-top">
+      <div style="max-width:1200px;margin:0 auto;">
+        <div data-reveal="up">
+          <span class="section-label">On the Calendar</span>
+          <div class="gold-line" style="margin-top:16px;"></div>
+          <h2 style="margin-top:16px;">Upcoming Events</h2>
+        </div>
+
+        <div class="events-grid">
+
+          <div class="event-card" data-reveal="up" style="transition-delay:.1s">
+            <div class="event-thumb">
+              <img src="images/join.jpg" alt="Resume Workshop" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            </div>
+            <div class="event-body">
+              <p class="event-date">TBD — Fall 2025</p>
+              <h3 class="event-title">Resume Workshop &amp; Mock Interviews</h3>
+              <p style="font-size:0.85rem;color:var(--white-faint);line-height:1.7;margin-bottom:20px;">Sharpen your resume and practice your interview skills with feedback from industry professionals and ALPFA mentors. Open to all members.</p>
+              <div class="event-actions">
+                <a href="membership.html" class="btn btn-gold" style="padding:11px 28px;font-size:0.6rem;">RSVP</a>
+                <a href="#" class="btn btn-outline" style="padding:11px 28px;font-size:0.6rem;">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card" data-reveal="up" style="transition-delay:.2s">
+            <div class="event-thumb">
+              <img src="images/event-gala.jpg" alt="KPMG Networking Night" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div class="event-body">
+              <p class="event-date">TBD — Fall 2025</p>
+              <h3 class="event-title">KPMG Networking Night</h3>
+              <p style="font-size:0.85rem;color:var(--white-faint);line-height:1.7;margin-bottom:20px;">Connect with KPMG professionals in an intimate setting. Learn about career paths, internship opportunities, and what it takes to succeed in Big 4 accounting.</p>
+              <div class="event-actions">
+                <a href="membership.html" class="btn btn-gold" style="padding:11px 28px;font-size:0.6rem;">RSVP</a>
+                <a href="#" class="btn btn-outline" style="padding:11px 28px;font-size:0.6rem;">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card" data-reveal="up" style="transition-delay:.3s">
+            <div class="event-thumb">
+              <img src="images/event-summit.jpg" alt="ALPFA National Conference" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            </div>
+            <div class="event-body">
+              <p class="event-date">TBD — Spring 2026</p>
+              <h3 class="event-title">ALPFA National Conference</h3>
+              <p style="font-size:0.85rem;color:var(--white-faint);line-height:1.7;margin-bottom:20px;">Attend the annual ALPFA national conference alongside thousands of Latino professionals and students. Access career fairs, keynote speakers, and leadership workshops.</p>
+              <div class="event-actions">
+                <a href="membership.html" class="btn btn-gold" style="padding:11px 28px;font-size:0.6rem;">Learn More</a>
+                <a href="https://alpfa.org" target="_blank" class="btn btn-outline" style="padding:11px 28px;font-size:0.6rem;">ALPFA National</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card" data-reveal="up" style="transition-delay:.4s">
+            <div class="event-thumb">
+              <img src="images/sponsors.jpg" alt="Spring Gala" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;" />
+            </div>
+            <div class="event-body">
+              <p class="event-date">TBD — Spring 2026</p>
+              <h3 class="event-title">Spring Gala &amp; Awards Dinner</h3>
+              <p style="font-size:0.85rem;color:var(--white-faint);line-height:1.7;margin-bottom:20px;">Our annual celebration of chapter achievements, member recognition, and professional accomplishments. An evening to reflect on the year and look ahead.</p>
+              <div class="event-actions">
+                <a href="membership.html" class="btn btn-gold" style="padding:11px 28px;font-size:0.6rem;">RSVP</a>
+                <a href="#" class="btn btn-outline" style="padding:11px 28px;font-size:0.6rem;">Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STAY CONNECTED BANNER -->
+    <section class="section section-card cut-top-rev" style="padding:80px 48px;">
+      <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;" data-reveal="up">
+        <div>
+          <span class="section-label">Never Miss an Event</span>
+          <h2 style="margin-top:16px;font-size:clamp(1.8rem,3vw,2.8rem);">Stay in the Loop</h2>
+          <p style="margin-top:16px;font-size:0.9rem;color:var(--white-faint);line-height:1.8;max-width:480px;">Become a member to receive event announcements, exclusive invitations, and priority registration for all ALPFA W&amp;M events.</p>
+        </div>
+        <a href="membership.html" class="btn btn-gold">Join Now</a>
+      </div>
+    </section>
+
+    <!-- PAST EVENTS GALLERY -->
+    <section class="section section-mid cut-top">
+      <div style="max-width:1200px;margin:0 auto;">
+        <div data-reveal="up" style="margin-bottom:0;">
+          <span class="section-label">Our History</span>
+          <div class="gold-line" style="margin-top:16px;"></div>
+          <h2 style="margin-top:16px;">Past Events</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-reveal="up" style="transition-delay:.05s">
+            <img src="images/event-bonfire.jpg" alt="Bonfire Night" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+            <div class="gallery-caption">Bonfire Night — Fall 2024</div>
+          </div>
+          <div class="gallery-item" data-reveal="up" style="transition-delay:.1s">
+            <img src="images/gallery-1.jpg" alt="Chapter Gala" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+            <div class="gallery-caption">Chapter Gala — Spring 2024</div>
+          </div>
+          <div class="gallery-item" data-reveal="up" style="transition-delay:.15s">
+            <img src="images/gallery-3.jpg" alt="ALPFA National Conference" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            <div class="gallery-caption">ALPFA National Conference</div>
+          </div>
+          <div class="gallery-item" data-reveal="up" style="transition-delay:.2s">
+            <img src="images/dc.jpg" alt="ALPFA NJ Conference" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            <div class="gallery-caption">ALPFA NJ Conference — Spring 2025</div>
+          </div>
+          <div class="gallery-item" data-reveal="up" style="transition-delay:.25s">
+            <img src="images/gallery-4.jpg" alt="National Conference" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+            <div class="gallery-caption">National Conference — 2024</div>
+          </div>
+          <div class="gallery-item" data-reveal="up" style="transition-delay:.3s">
+            <img src="images/gallery-5.jpg" alt="Chapter Meeting" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            <div class="gallery-caption">W&M Chapter — Fall 2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-text">ALPFA <em>W&amp;M</em></a>
+        <p>Association of Latino Professionals for America<br />William &amp; Mary Chapter</p>
+        <div class="footer-socials">
+          <a href="mailto:alpfawm@gmail.com" aria-label="Email">@</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="sponsors.html">Sponsors</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>alpfawm@gmail.com</p>
+        <p>200 Stadium Dr.<br />Williamsburg, VA 23186</p>
+      </div>
+      <div class="footer-col">
+        <h4>ALPFA National</h4>
+        <a href="https://alpfa.org" target="_blank" rel="noopener">alpfa.org</a>
+        <p class="wm-text">William &amp; Mary</p>
+        <p style="font-size:0.72rem;color:var(--white-faint);">Founded 2023</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ALPFA at William &amp; Mary. All rights reserved.</p>
+      <p style="opacity:0.5;">Empowering Tomorrow's Leaders</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

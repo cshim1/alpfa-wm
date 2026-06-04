@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALPFA at William & Mary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <header id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-text">ALPFA <em>W&amp;M</em></a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="sponsors.html">Sponsors</a>
+      </div>
+      <a href="membership.html" class="nav-cta">Join Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="events.html">Events</a>
+    <a href="membership.html">Membership</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="membership.html" class="btn btn-gold" style="margin-top:8px;text-align:center;">Join Now</a>
+  </div>
+
+  <main>
+
+    <!-- HERO — cinematic full-bleed, logo on right -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="images/hero.jpg" alt="ALPFA W&M Chapter" />
+      </div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+
+      <div class="hero-content">
+        <div class="hero-text" data-reveal="left">
+          <p class="hero-eyebrow">Association of Latino Professionals for America</p>
+          <h1 class="hero-title">ALPFA<br /><em>W&amp;M</em></h1>
+          <p class="hero-tagline">Driven students. Real connections.<br />Careers that start here.</p>
+          <div class="hero-actions">
+            <a href="membership.html" class="btn btn-gold">Join Us</a>
+            <a href="about.html" class="btn btn-outline">Our Story</a>
+          </div>
+        </div>
+
+        <div class="hero-right-col" data-reveal="fade">
+          <div class="hero-stat-stack">
+            <div class="hero-stat-item">
+              <span class="hero-stat-n">47</span>
+              <span class="hero-stat-l">Chapter Members</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-n">2023</span>
+              <span class="hero-stat-l">Founded at W&amp;M</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-n">100K+</span>
+              <span class="hero-stat-l">National Members</span>
+            </div>
+          </div>
+          <p class="hero-right-quote">"Empowering Tomorrow's Leaders"</p>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar">
+      <div class="stats-inner">
+        <div class="stat-item" data-reveal="up">
+          <span class="stat-num" data-count="47">47</span>
+          <span class="stat-lbl">Chapter Members</span>
+        </div>
+        <div class="stat-item" data-reveal="up" style="transition-delay:.1s">
+          <span class="stat-num">2023</span>
+          <span class="stat-lbl">Founded at W&amp;M</span>
+        </div>
+        <div class="stat-item" data-reveal="up" style="transition-delay:.2s">
+          <span class="stat-num" data-count="100" data-suffix="K+">100K+</span>
+          <span class="stat-lbl">National Members</span>
+        </div>
+        <div class="stat-item" data-reveal="up" style="transition-delay:.3s">
+          <span class="stat-num" data-count="200" data-suffix="+">200+</span>
+          <span class="stat-lbl">Chapters Nationwide</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION — editorial asymmetric layout -->
+    <section class="section section-mid cut-top" style="overflow:visible;">
+      <div class="mission-layout">
+        <!-- Watermark text -->
+        <span class="section-watermark">ALPFA</span>
+
+        <div class="mission-image-col" data-reveal="left">
+          <div class="image-frame" style="height:560px;">
+            <img src="images/mission.jpg" alt="ALPFA W&M members" loading="lazy" />
+          </div>
+          <!-- Floating stat card -->
+          <div class="float-card" data-reveal="up" style="transition-delay:.3s">
+            <strong>47</strong>
+            <span>Active Members</span>
+          </div>
+        </div>
+
+        <div class="mission-text-col" data-reveal="right">
+          <span class="section-label">Our Purpose</span>
+          <div class="gold-line"></div>
+          <h2>A Launchpad<br />for Leaders</h2>
+          <p>ALPFA at William &amp; Mary is more than a student organization. We are a community where ambition becomes achievement — empowering Latino students and allies to develop the skills, mindset, and network needed to thrive.</p>
+          <p>Every event, every connection, every workshop is designed to move you forward.</p>
+          <div class="actions" style="margin-top:8px;">
+            <a href="about.html" class="btn btn-gold">Our Story</a>
+            <a href="events.html" class="btn btn-outline">Events</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES STRIP — full-bleed, breaks the two-col pattern -->
+    <section class="values-strip">
+      <div class="values-inner">
+        <div class="value-item" data-reveal="up">
+          <span class="value-num">01</span>
+          <h3 class="value-title">Excellence</h3>
+          <p class="value-text">We hold ourselves to the standard of the professionals we want to become.</p>
+        </div>
+        <div class="value-divider"></div>
+        <div class="value-item" data-reveal="up" style="transition-delay:.1s">
+          <span class="value-num">02</span>
+          <h3 class="value-title">Community</h3>
+          <p class="value-text">Latino-based, not Latino-exclusive. Everyone who shares our drive belongs here.</p>
+        </div>
+        <div class="value-divider"></div>
+        <div class="value-item" data-reveal="up" style="transition-delay:.2s">
+          <span class="value-num">03</span>
+          <h3 class="value-title">Integrity</h3>
+          <p class="value-text">We represent our community at every firm, conference, and interview with pride.</p>
+        </div>
+        <div class="value-divider"></div>
+        <div class="value-item" data-reveal="up" style="transition-delay:.3s">
+          <span class="value-num">04</span>
+          <h3 class="value-title">Impact</h3>
+          <p class="value-text">The careers we build here reach far beyond Williamsburg.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW — photo left, text right, wider image -->
+    <section class="section section-deep cut-top">
+      <div class="two-col">
+        <div class="about-img-stack" data-reveal="left">
+          <div class="image-frame" style="height:520px;">
+            <img src="images/about.jpg" alt="ALPFA W&M Board" loading="lazy" style="object-position:center top;" />
+          </div>
+          <div class="img-caption-pill">W&amp;M Chapter Board</div>
+        </div>
+        <div class="col-content" data-reveal="right">
+          <span class="section-label">Who We Are</span>
+          <div class="gold-line"></div>
+          <h2>Latino Based.<br />Not Latino<br />Exclusive.</h2>
+          <p>ALPFA at William &amp; Mary assists students to be propelled to the forefront of top firms — a support system for those seeking internship opportunities, career development, and full-time prospects.</p>
+          <p>We welcome everyone who shares our commitment to professional excellence.</p>
+          <div class="actions">
+            <a href="about.html" class="btn btn-outline">Meet the Board</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSOR MARQUEE — scrolling ticker, not a static row -->
+    <section class="sponsor-marquee-section">
+      <p class="marquee-label" data-reveal="up">Proudly Supported By</p>
+      <div class="marquee-track" aria-label="Our sponsors">
+        <div class="marquee-inner">
+          <span>KPMG</span>
+          <span class="marquee-dot">·</span>
+          <span>PwC</span>
+          <span class="marquee-dot">·</span>
+          <span>EY</span>
+          <span class="marquee-dot">·</span>
+          <span>Becker</span>
+          <span class="marquee-dot">·</span>
+          <span>KPMG</span>
+          <span class="marquee-dot">·</span>
+          <span>PwC</span>
+          <span class="marquee-dot">·</span>
+          <span>EY</span>
+          <span class="marquee-dot">·</span>
+          <span>Becker</span>
+          <span class="marquee-dot">·</span>
+          <span>KPMG</span>
+          <span class="marquee-dot">·</span>
+          <span>PwC</span>
+          <span class="marquee-dot">·</span>
+          <span>EY</span>
+          <span class="marquee-dot">·</span>
+          <span>Becker</span>
+          <span class="marquee-dot">·</span>
+        </div>
+      </div>
+      <a href="sponsors.html" class="btn btn-outline" data-reveal="up" style="margin-top:32px;">Become a Sponsor</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-text">ALPFA <em>W&amp;M</em></a>
+        <p>Association of Latino Professionals for America<br />William &amp; Mary Chapter</p>
+        <div class="footer-socials">
+          <a href="mailto:alpfawm@gmail.com" aria-label="Email">@</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="about.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="sponsors.html">Sponsors</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>alpfawm@gmail.com</p>
+        <p>200 Stadium Dr.<br />Williamsburg, VA 23186</p>
+      </div>
+      <div class="footer-col">
+        <h4>ALPFA National</h4>
+        <a href="https://alpfa.org" target="_blank" rel="noopener">alpfa.org</a>
+        <p class="wm-text">William &amp; Mary</p>
+        <p style="font-size:0.72rem;color:var(--white-faint);">Founded 2023</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ALPFA at William &amp; Mary. All rights reserved.</p>
+      <p style="opacity:0.5;">Empowering Tomorrow's Leaders</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
