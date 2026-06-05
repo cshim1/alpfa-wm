@@ -472,7 +472,7 @@ footer .logo-img {
    ============================================ */
 
 .page-hero {
-  padding: calc(var(--nav-h) + 60px) 0 48px;
+  padding: calc(var(--nav-h) + 48px) 0 32px;
   text-align: center;
   position: relative;
   overflow: hidden;
