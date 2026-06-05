@@ -1155,11 +1155,13 @@ footer .logo-img {
 
 /* Diagonal cuts */
 .cut-both {
-  clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0 100%);
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin-top: -40px;
-  margin-bottom: -40px;
+  clip-path: polygon(0 80px, 100% 0, 100% calc(100% - 80px), 0 100%);
+  padding-top: 140px;
+  padding-bottom: 140px;
+  margin-top: -60px;
+  margin-bottom: -60px;
+  position: relative;
+  z-index: 1;
 }
 
 .cut-top {
@@ -1555,6 +1557,33 @@ footer .logo-img {
 /* ============================================
    FOOTER
    ============================================ */
+
+/* Page section divider */
+.page-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 60px;
+  margin: 0;
+}
+
+.page-section-divider::before,
+.page-section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,160,82,0.5), transparent);
+}
+
+.page-section-divider span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(201,160,82,0.6);
+  white-space: nowrap;
+}
 
 /* ============================================
    WILLIAM & MARY — STORY + STATS SECTION
