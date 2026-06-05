@@ -1581,9 +1581,6 @@ footer .logo-img {
 .about-fullbleed-section {
   position: relative;
   overflow: hidden;
-  min-height: 540px;
-  display: flex;
-  align-items: center;
 }
 
 .about-fullbleed-bg {
@@ -1603,31 +1600,38 @@ footer .logo-img {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    105deg,
-    rgba(6,20,14,0.91) 0%,
-    rgba(8,26,18,0.82) 45%,
-    rgba(8,26,18,0.55) 100%
-  );
-}
-
-.about-fullbleed-right .about-fullbleed-overlay {
-  background: linear-gradient(
-    255deg,
-    rgba(6,20,14,0.91) 0%,
-    rgba(8,26,18,0.82) 45%,
-    rgba(8,26,18,0.55) 100%
+    135deg,
+    rgba(8,26,18,0.92) 0%,
+    rgba(10,34,24,0.85) 50%,
+    rgba(8,26,18,0.90) 100%
   );
 }
 
 .about-fullbleed-inner {
   position: relative;
   z-index: 1;
-  max-width: 560px;
-  padding: 100px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 60px;
 }
 
-.about-fullbleed-right .about-fullbleed-inner {
-  margin-left: auto;
+.about-fullbleed-inner h2 {
+  color: var(--white);
+  margin-bottom: 16px;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  letter-spacing: -0.02em;
+}
+
+.about-fullbleed-inner p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--white-dim);
+  max-width: 52ch;
+  margin-bottom: 12px;
+}
+
+.about-fullbleed-inner .col-text-wrap {
+  max-width: 560px;
 }
 
 .wm-story-bg {
