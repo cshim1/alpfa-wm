@@ -1043,6 +1043,8 @@ footer .logo-img {
 
 .marquee-logo:hover { opacity: 1; }
 
+.marquee-logo-ey { padding: 6px 20px; }
+
 .marquee-inner span {
   font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
