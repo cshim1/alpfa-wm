@@ -1572,6 +1572,7 @@ footer .logo-img {
 .wm-story-section {
   position: relative;
   overflow: hidden;
+  margin-bottom: 48px;
 }
 
 /* ============================================
@@ -1581,6 +1582,7 @@ footer .logo-img {
 .about-fullbleed-section {
   position: relative;
   overflow: hidden;
+  margin-top: 48px;
 }
 
 .about-fullbleed-bg {
