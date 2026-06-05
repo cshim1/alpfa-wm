@@ -136,28 +136,6 @@ const statObserver = new IntersectionObserver((entries) => {
 statNums.forEach(el => statObserver.observe(el));
 
 // ============================================
-// HERO LOGO — 3D TILT
-// ============================================
-
-(function() {
-  const wrap = document.querySelector('.hero-logo-wrap');
-  if (!wrap) return;
-
-  document.addEventListener('mousemove', function(e) {
-    const rect = wrap.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height / 2;
-    const dx = (e.clientX - cx) / 18;
-    const dy = (e.clientY - cy) / 18;
-    wrap.style.transform = `perspective(700px) rotateY(${dx}deg) rotateX(${-dy}deg) scale(1.04)`;
-  });
-
-  wrap.addEventListener('mouseleave', function() {
-    wrap.style.transform = 'perspective(700px) rotateY(0deg) rotateX(0deg) scale(1)';
-  });
-})();
-
-// ============================================
 // IMAGE LOAD — show img, hide placeholder
 // ============================================
 
