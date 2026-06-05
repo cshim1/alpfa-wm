@@ -1608,6 +1608,8 @@ footer .logo-img {
 .wm-story-text h2 {
   color: var(--white);
   margin-bottom: 16px;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  letter-spacing: -0.02em;
 }
 
 .wm-story-text p {
