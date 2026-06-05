@@ -1154,6 +1154,14 @@ footer .logo-img {
 .section-deep  { background: var(--green-deep); }
 
 /* Diagonal cuts */
+.cut-both {
+  clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0 100%);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
 .cut-top {
   clip-path: polygon(0 60px, 100% 0, 100% 100%, 0 100%);
   margin-top: -60px;
