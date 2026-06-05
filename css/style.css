@@ -755,20 +755,8 @@ footer .logo-img {
 
 .hero-logo-wrap {
   display: inline-block;
-  transform-style: preserve-3d;
-  transition: transform 0.15s ease;
-  will-change: transform;
-  position: relative;
 }
 
-.hero-logo-shine {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 10;
-}
 
 .hero-logo-img {
   width: 100%;
@@ -776,8 +764,6 @@ footer .logo-img {
   height: auto;
   object-fit: contain;
   display: block;
-  mix-blend-mode: multiply;
-  filter: saturate(1.1);
 }
 
 .hero-stat-stack {

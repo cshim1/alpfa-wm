@@ -161,32 +161,3 @@ document.querySelectorAll('.image-frame img').forEach(img => {
 // HERO LOGO — 3D TILT + SHINE
 // ============================================
 
-(function() {
-  const wrap = document.querySelector('.hero-logo-wrap');
-  if (!wrap) return;
-
-  // create shine overlay
-  const shine = document.createElement('div');
-  shine.className = 'hero-logo-shine';
-  wrap.appendChild(shine);
-
-  document.addEventListener('mousemove', function(e) {
-    const rect = wrap.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height / 2;
-    const dx = (e.clientX - cx) / 18;
-    const dy = (e.clientY - cy) / 18;
-
-    wrap.style.transform = `perspective(700px) rotateY(${dx}deg) rotateX(${-dy}deg) scale(1.04)`;
-
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    shine.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.08) 40%, transparent 65%)`;
-    shine.style.opacity = '1';
-  });
-
-  wrap.addEventListener('mouseleave', function() {
-    wrap.style.transform = 'perspective(700px) rotateY(0deg) rotateX(0deg) scale(1)';
-    shine.style.opacity = '0';
-  });
-})();
