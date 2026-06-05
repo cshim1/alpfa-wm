@@ -626,6 +626,21 @@ footer .logo-img {
   50%       { background-position: 100% center; }
 }
 
+.hero-subtitle {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: none;
+  -webkit-text-fill-color: rgba(247,245,240,0.55);
+  color: rgba(247,245,240,0.55);
+  margin-top: 12px;
+  line-height: 1;
+}
+
 .hero-tagline {
   font-family: 'DM Sans', sans-serif;
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
@@ -780,6 +795,7 @@ footer .logo-img {
 
 .mission-watermark-wrap {
   width: 100%;
+  overflow: hidden;
   text-align: center;
   margin-bottom: -72px;
   position: relative;
