@@ -472,7 +472,7 @@ footer .logo-img {
    ============================================ */
 
 .page-hero {
-  padding: calc(var(--nav-h) + 80px) 0 80px;
+  padding: calc(var(--nav-h) + 60px) 0 48px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1581,6 +1581,9 @@ footer .logo-img {
 .about-fullbleed-section {
   position: relative;
   overflow: hidden;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
 }
 
 .about-fullbleed-bg {
