@@ -1142,7 +1142,7 @@ footer .logo-img {
 .two-col.flip { direction: rtl; }
 .two-col.flip > * { direction: ltr; }
 
-.col-content { display: flex; flex-direction: column; gap: 24px; }
+.col-content { display: flex; flex-direction: column; gap: 16px; }
 
 .col-content h2 {
   font-size: clamp(2.2rem, 4vw, 3.6rem);
