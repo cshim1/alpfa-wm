@@ -750,10 +750,15 @@ footer .logo-img {
 
 .hero-logo-img {
   width: 100%;
-  max-width: 360px;
+  max-width: 340px;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 8px 40px rgba(201,160,82,0.25));
+  border-radius: 50%;
+  border: 2px solid rgba(201,160,82,0.7);
+  box-shadow:
+    0 0 0 6px rgba(201,160,82,0.08),
+    0 0 40px rgba(201,160,82,0.3),
+    0 0 80px rgba(201,160,82,0.12);
 }
 
 .hero-stat-stack {
