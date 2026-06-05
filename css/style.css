@@ -1605,7 +1605,8 @@ footer a:hover { color: var(--gold); }
   .section { padding: 80px 24px; }
   .two-col { grid-template-columns: 1fr; gap: 48px; }
   .two-col.flip { direction: ltr; }
-  .hero-content { grid-template-columns: 1fr; gap: 48px; padding: 120px 24px 80px; }
+  .hero-content { grid-template-columns: 1fr; gap: 48px; padding: 120px 36px 80px; }
+  .hero-text { padding-left: 10px; }
   .hero-right-col { display: none; }
   .hero-title { font-size: 3.5rem; }
   .stats-inner { grid-template-columns: repeat(2, 1fr); height: auto; padding: 24px 0; }
@@ -1630,6 +1631,7 @@ footer a:hover { color: var(--gold); }
   .nav-cta  { display: none; }
   .hamburger { display: flex; }
   .hero-title { font-size: 2.8rem; }
+  .hero-text { padding-left: 12px; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { text-align: center; }
   .hero-right-col { display: none; }
