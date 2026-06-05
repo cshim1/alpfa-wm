@@ -1548,6 +1548,192 @@ footer .logo-img {
    FOOTER
    ============================================ */
 
+/* ============================================
+   WILLIAM & MARY SECTION
+   ============================================ */
+
+.wm-university-section {
+  background: #F2EDE3;
+  color: #1A3D2A;
+}
+
+.wm-photo-banner {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.wm-photo-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.wm-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10,34,24,0.35) 0%, rgba(10,34,24,0.65) 100%);
+}
+
+.wm-photo-text {
+  position: absolute;
+  bottom: 48px;
+  left: 60px;
+  color: #F2EDE3;
+}
+
+.wm-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #C9A052;
+  margin-bottom: 8px;
+}
+
+.wm-hero-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #F2EDE3;
+  margin-bottom: 12px;
+}
+
+.wm-hero-title em {
+  color: #C9A052;
+  font-style: italic;
+}
+
+.wm-founded {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: rgba(242,237,227,0.8);
+}
+
+.wm-body {
+  padding: 64px 60px 80px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.wm-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.wm-stat-card {
+  background: #fff;
+  border: 1px solid rgba(26,61,42,0.12);
+  border-radius: 12px;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  box-shadow: 0 2px 12px rgba(26,61,42,0.07);
+}
+
+.wm-stat-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1A3D2A;
+  line-height: 1;
+}
+
+.wm-stat-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.wm-stat-lbl {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #4a6b58;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+
+.wm-enrollment {
+  background: #1A3D2A;
+  border-radius: 14px;
+  padding: 32px 40px;
+}
+
+.wm-enroll-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.wm-enroll-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.wm-enroll-divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(201,160,82,0.3);
+}
+
+.wm-enroll-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #C9A052;
+  line-height: 1;
+}
+
+.wm-enroll-lbl {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(242,237,227,0.7);
+}
+
+.wm-second-photo {
+  border-radius: 14px;
+  overflow: hidden;
+  height: 320px;
+}
+
+.wm-second-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .wm-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .wm-body { padding: 48px 24px 64px; }
+  .wm-photo-text { left: 24px; bottom: 32px; }
+}
+
+@media (max-width: 600px) {
+  .wm-enroll-row { flex-wrap: wrap; gap: 24px; }
+  .wm-enroll-divider { display: none; }
+}
+
 footer {
   background: var(--green-deep);
   border-top: 1px solid rgba(201,160,82,0.4);
