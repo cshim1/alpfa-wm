@@ -750,7 +750,8 @@ footer .logo-img {
   justify-content: center;
   position: relative;
   z-index: 2;
-  padding-left: 48px;
+  padding-left: 0;
+  padding-right: 48px;
 }
 
 .hero-logo-wrap {
@@ -760,7 +761,7 @@ footer .logo-img {
 
 .hero-logo-img {
   width: 100%;
-  max-width: 350px;
+  max-width: 440px;
   height: auto;
   object-fit: contain;
   display: block;
