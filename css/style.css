@@ -1636,6 +1636,24 @@ footer .logo-img {
 
 .about-fullbleed-inner .col-text-wrap {
   max-width: 560px;
+  text-align: left;
+}
+
+.about-fullbleed-inner .col-text-wrap .gold-line {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.about-fullbleed-inner .col-text-wrap p {
+  text-align: left;
+}
+
+.about-fullbleed-inner .col-text-wrap h2 {
+  text-align: left;
+}
+
+.about-fullbleed-inner .col-text-wrap .actions {
+  justify-content: flex-start;
 }
 
 .wm-story-bg {
