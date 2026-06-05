@@ -1012,7 +1012,7 @@ footer .logo-img {
   font-style: italic;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   font-weight: 700;
-  color: var(--white-faint);
+  color: var(--white);
   white-space: nowrap;
   transition: color 0.3s ease;
 }
@@ -1511,15 +1511,13 @@ footer .logo-img {
 
 footer {
   background: var(--green-deep);
-  border-top: 1px solid var(--gold-dim);
-  clip-path: polygon(0 60px, 100% 0, 100% 100%, 0 100%);
-  margin-top: -60px;
+  border-top: 1px solid rgba(201,160,82,0.4);
 }
 
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 48px 60px;
+  padding: 80px 48px 60px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 60px;
