@@ -273,7 +273,7 @@ footer .logo-img {
 .gold-line {
   width: 48px; height: 1px;
   background: linear-gradient(90deg, var(--gold), transparent);
-  margin-bottom: 24px;
+  margin-bottom: 4px;
 }
 
 /* ============================================
@@ -1142,7 +1142,7 @@ footer .logo-img {
 .two-col.flip { direction: rtl; }
 .two-col.flip > * { direction: ltr; }
 
-.col-content { display: flex; flex-direction: column; gap: 16px; }
+.col-content { display: flex; flex-direction: column; gap: 8px; }
 
 .col-content h2 {
   font-size: clamp(2.2rem, 4vw, 3.6rem);
