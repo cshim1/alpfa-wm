@@ -1554,7 +1554,8 @@ footer a,
   transition: color 0.25s ease;
 }
 
-footer a:hover { color: var(--gold); }
+footer a:not(.logo-text):hover { color: var(--gold); }
+footer .logo-text:hover { color: var(--white); }
 
 .footer-socials {
   display: flex;
