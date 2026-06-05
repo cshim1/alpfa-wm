@@ -190,7 +190,13 @@ document.querySelectorAll('.image-frame img').forEach(img => {
     const pp    = perPage();
     const start = current * pp;
     slides.forEach((s, i) => {
-      s.classList.toggle('active', i >= start && i < start + pp);
+      const shouldShow = i >= start && i < start + pp;
+      if (shouldShow && !s.classList.contains('active')) {
+        s.classList.add('active', 'fade-in');
+        s.addEventListener('animationend', () => s.classList.remove('fade-in'), { once: true });
+      } else if (!shouldShow) {
+        s.classList.remove('active', 'fade-in');
+      }
     });
     dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
       d.classList.toggle('active', i === current);
