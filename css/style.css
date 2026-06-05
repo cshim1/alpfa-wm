@@ -1027,6 +1027,18 @@ footer .logo-img {
   animation: marqueeScroll 18s linear infinite;
 }
 
+.marquee-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.marquee-logo:hover { opacity: 1; }
+
 .marquee-inner span {
   font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
