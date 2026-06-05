@@ -800,6 +800,7 @@ footer .logo-img {
   letter-spacing: 0.12em;
   line-height: 1;
   white-space: nowrap;
+  padding-left: 0.2em;
 }
 
 .mission-image-col {
