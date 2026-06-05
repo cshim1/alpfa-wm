@@ -158,6 +158,55 @@ document.querySelectorAll('.image-frame img').forEach(img => {
 });
 
 // ============================================
+// PHOTO CAROUSEL
+// ============================================
+
+(function () {
+  const track   = document.getElementById('carouselTrack');
+  const prevBtn = document.getElementById('carouselPrev');
+  const nextBtn = document.getElementById('carouselNext');
+  const dotsEl  = document.getElementById('carouselDots');
+  if (!track) return;
+
+  const slides     = Array.from(track.querySelectorAll('.carousel-slide'));
+  const perPage    = () => window.innerWidth <= 600 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+  let   current    = 0;
+
+  function totalPages() { return Math.ceil(slides.length / perPage()); }
+
+  function buildDots() {
+    dotsEl.innerHTML = '';
+    for (let i = 0; i < totalPages(); i++) {
+      const d = document.createElement('button');
+      d.className = 'carousel-dot' + (i === current ? ' active' : '');
+      d.setAttribute('aria-label', 'Page ' + (i + 1));
+      d.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function goTo(page) {
+    current = (page + totalPages()) % totalPages();
+    const pp    = perPage();
+    const start = current * pp;
+    slides.forEach((s, i) => {
+      s.classList.toggle('active', i >= start && i < start + pp);
+    });
+    dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => goTo(current - 1));
+  nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  window.addEventListener('resize', () => { buildDots(); goTo(0); });
+
+  buildDots();
+  goTo(0);
+})();
+
+// ============================================
 // HERO LOGO — 3D TILT + SHINE
 // ============================================
 

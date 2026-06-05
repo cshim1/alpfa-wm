@@ -122,39 +122,55 @@
       </div>
     </section>
 
-    <!-- PAST EVENTS GALLERY -->
-    <section class="section section-mid" style="position:relative; z-index:0;">
+    <!-- PAST EVENTS CAROUSEL -->
+    <section class="section section-mid">
       <div style="max-width:1200px;margin:0 auto;">
-        <div data-reveal="up" style="margin-bottom:0;">
+        <div data-reveal="up">
           <span class="section-label">Our History</span>
           <div class="gold-line" style="margin-top:16px;"></div>
           <h2 style="margin-top:16px;font-size:clamp(2.4rem,4.5vw,4rem);">Past Events</h2>
         </div>
-        <div class="gallery-grid">
-          <div class="gallery-item" data-reveal="up" style="transition-delay:.05s">
-            <img src="images/event-bonfire.jpg" alt="Bonfire Night" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
-            <div class="gallery-caption">Bonfire Night — Fall 2024</div>
+
+        <div class="carousel-wrap" data-reveal="up" style="transition-delay:.15s">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+              <div class="carousel-img"><img src="images/event-bonfire.jpg" alt="Bonfire Night" loading="lazy" /></div>
+              <p class="carousel-caption">Bonfire Night — Fall 2024</p>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-img"><img src="images/gallery-1.jpg" alt="Chapter Gala" loading="lazy" /></div>
+              <p class="carousel-caption">Chapter Gala — Spring 2024</p>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-img"><img src="images/gallery-3.jpg" alt="ALPFA National Conference" loading="lazy" style="object-position:center top;" /></div>
+              <p class="carousel-caption">ALPFA National Conference</p>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-img"><img src="images/dc.jpg" alt="ALPFA NJ Conference" loading="lazy" style="object-position:center top;" /></div>
+              <p class="carousel-caption">ALPFA NJ Conference — Spring 2025</p>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-img"><img src="images/gallery-4.jpg" alt="National Conference" loading="lazy" /></div>
+              <p class="carousel-caption">National Conference — 2024</p>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-img"><img src="images/gallery-5.jpg" alt="W&M Chapter" loading="lazy" style="object-position:center top;" /></div>
+              <p class="carousel-caption">W&amp;M Chapter — Fall 2024</p>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-img"><img src="images/A-NJ25-02 RSS-Fresco-0857.jpeg" alt="ALPFA NJ 2025" loading="lazy" /></div>
+              <p class="carousel-caption">ALPFA NJ Conference — Spring 2025</p>
+            </div>
           </div>
-          <div class="gallery-item" data-reveal="up" style="transition-delay:.1s">
-            <img src="images/gallery-1.jpg" alt="Chapter Gala" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
-            <div class="gallery-caption">Chapter Gala — Spring 2024</div>
-          </div>
-          <div class="gallery-item" data-reveal="up" style="transition-delay:.15s">
-            <img src="images/gallery-3.jpg" alt="ALPFA National Conference" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
-            <div class="gallery-caption">ALPFA National Conference</div>
-          </div>
-          <div class="gallery-item" data-reveal="up" style="transition-delay:.2s">
-            <img src="images/dc.jpg" alt="ALPFA NJ Conference" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
-            <div class="gallery-caption">ALPFA NJ Conference — Spring 2025</div>
-          </div>
-          <div class="gallery-item" data-reveal="up" style="transition-delay:.25s">
-            <img src="images/gallery-4.jpg" alt="National Conference" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
-            <div class="gallery-caption">National Conference — 2024</div>
-          </div>
-          <div class="gallery-item" data-reveal="up" style="transition-delay:.3s">
-            <img src="images/gallery-5.jpg" alt="Chapter Meeting" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
-            <div class="gallery-caption">W&M Chapter — Fall 2024</div>
-          </div>
+
+          <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+
+          <div class="carousel-dots" id="carouselDots"></div>
         </div>
       </div>
     </section>
