@@ -619,6 +619,7 @@ footer .logo-img {
   line-height: 0.92;
   letter-spacing: -0.03em;
   margin-bottom: 32px;
+  padding-left: 16px;
   background: linear-gradient(135deg, #F7F5F0 0%, #E8C27A 35%, #C9A052 55%, #F7F5F0 100%);
   background-size: 250% auto;
   -webkit-background-clip: text;
@@ -817,10 +818,10 @@ footer .logo-img {
   display: block;
   font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
-  font-size: clamp(4rem, 13vw, 10rem);
+  font-size: clamp(5rem, 17vw, 14rem);
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(201,160,82,0.3);
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.28);
   pointer-events: none;
   user-select: none;
   letter-spacing: 0.14em;
