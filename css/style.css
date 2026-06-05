@@ -1613,6 +1613,7 @@ footer .logo-img {
 .about-fullbleed-inner {
   position: relative;
   z-index: 1;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 60px;
