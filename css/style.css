@@ -142,7 +142,13 @@ body::before {
   gap: 8px;
 }
 
-.logo-text em { color: var(--gold); font-style: italic; }
+.logo-text em {
+  color: var(--gold);
+  font-style: italic;
+  font-size: 0.88em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
 
 .logo-img {
   height: 40px;
@@ -572,7 +578,7 @@ footer .logo-img {
   position: relative;
   z-index: 2;
   width: 100%;
-  padding: calc(var(--nav-h) + 20px) 48px 80px 120px;
+  padding: calc(var(--nav-h) + 60px) 48px 120px 60px;
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
@@ -801,9 +807,9 @@ footer .logo-img {
   width: 100%;
   overflow: hidden;
   text-align: center;
-  margin-bottom: -72px;
+  margin-bottom: 40px;
   position: relative;
-  z-index: 3;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -811,16 +817,15 @@ footer .logo-img {
   display: block;
   font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
-  font-size: clamp(5rem, 16vw, 13rem);
+  font-size: clamp(4rem, 13vw, 10rem);
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255,255,255,0.22);
+  -webkit-text-stroke: 1px rgba(201,160,82,0.3);
   pointer-events: none;
   user-select: none;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   line-height: 1;
   white-space: nowrap;
-  padding-left: 0.2em;
 }
 
 .mission-image-col {
