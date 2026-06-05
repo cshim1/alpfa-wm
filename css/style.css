@@ -509,7 +509,7 @@ footer .logo-img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  overflow-x: clip;
+  overflow: visible;
   background: var(--green-deep);
 }
 
