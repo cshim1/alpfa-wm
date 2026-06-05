@@ -1026,7 +1026,6 @@ footer .logo-img {
   gap: 60px;
   flex-shrink: 0;
   min-width: 100%;
-  padding: 0 30px;
   animation: marqueeScroll 20s linear infinite;
 }
 
