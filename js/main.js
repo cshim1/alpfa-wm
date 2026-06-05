@@ -158,6 +158,47 @@ document.querySelectorAll('.image-frame img').forEach(img => {
 });
 
 // ============================================
+// MINI SLIDESHOW (inside carousel card)
+// ============================================
+
+(function () {
+  const wrap = document.getElementById('miniShow');
+  const dotsEl = document.getElementById('miniDots');
+  if (!wrap) return;
+
+  const imgs = Array.from(wrap.querySelectorAll('.mini-img'));
+  let current = 0;
+  let timer;
+
+  // Build dots
+  imgs.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'mini-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Photo ' + (i + 1));
+    d.addEventListener('click', (e) => { e.stopPropagation(); goTo(i); resetTimer(); });
+    dotsEl.appendChild(d);
+  });
+
+  function goTo(n) {
+    imgs[current].classList.remove('active');
+    dotsEl.children[current].classList.remove('active');
+    current = (n + imgs.length) % imgs.length;
+    imgs[current].classList.add('active');
+    dotsEl.children[current].classList.add('active');
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 3200);
+  }
+
+  // Click card to advance manually
+  wrap.addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+
+  resetTimer();
+})();
+
+// ============================================
 // PHOTO CAROUSEL
 // ============================================
 
