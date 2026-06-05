@@ -20,7 +20,7 @@
   --gold-dim:    rgba(201,160,82,0.15);
   --gold-glow:   rgba(201,160,82,0.08);
   --white:       #F7F5F0;
-  --white-dim:   rgba(247,245,240,0.6);
+  --white-dim:   rgba(247,245,240,0.82);
   --white-faint: rgba(247,245,240,0.28);
   --glass:       rgba(8,28,18,0.85);
   --nav-h:       72px;
@@ -42,6 +42,7 @@ body {
   font-family: 'Lora', Georgia, serif;
   background: var(--green-deep);
   color: var(--white-dim);
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -342,6 +343,10 @@ footer .logo-img {
   position: relative;
   cursor: none;
   transition: color 0.25s ease;
+  padding: 12px 4px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-links a::after {
@@ -1153,8 +1158,9 @@ footer .logo-img {
 
 .col-content p {
   font-size: 0.95rem;
-  line-height: 1.85;
+  line-height: 1.75;
   color: var(--white-dim);
+  max-width: 54ch;
 }
 
 .col-content .actions { display: flex; gap: 16px; margin-top: 8px; flex-wrap: wrap; }
@@ -1553,6 +1559,10 @@ footer a,
   line-height: 1.7;
   cursor: none;
   transition: color 0.25s ease;
+  padding: 6px 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 footer a:not(.logo-text):hover { color: var(--gold); }
