@@ -1616,6 +1616,7 @@ footer .logo-img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 60px;
+  text-align: left;
 }
 
 .about-fullbleed-inner h2 {
