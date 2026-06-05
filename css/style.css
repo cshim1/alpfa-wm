@@ -1602,16 +1602,20 @@ footer .logo-img {
 }
 
 .wm-story-text {
-  max-width: 680px;
+  max-width: 560px;
 }
 
-.wm-story-text h2 { color: var(--white); }
+.wm-story-text h2 {
+  color: var(--white);
+  margin-bottom: 16px;
+}
 
 .wm-story-text p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.75;
   color: var(--white-dim);
-  max-width: 54ch;
+  max-width: 52ch;
+  margin-bottom: 12px;
 }
 
 /* Glassmorphism stat cards */
@@ -1631,8 +1635,10 @@ footer .logo-img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   gap: 10px;
+  min-height: 140px;
   transition: background 0.25s ease, border-color 0.25s ease;
   cursor: default;
 }
