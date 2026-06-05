@@ -161,12 +161,14 @@ document.querySelectorAll('.image-frame img').forEach(img => {
 // MINI SLIDESHOW (inside carousel card)
 // ============================================
 
-(function () {
-  const wrap = document.getElementById('miniShow');
-  const dotsEl = document.getElementById('miniDots');
-  if (!wrap) return;
+document.querySelectorAll('.mini-show').forEach(function (wrap) {
+  const slide  = wrap.closest('.carousel-slide');
+  const dotsEl = slide ? slide.querySelector('.mini-dots') : null;
+  if (!dotsEl) return;
 
   const imgs = Array.from(wrap.querySelectorAll('.mini-img'));
+  if (!imgs.length) return;
+
   let current = 0;
   let timer;
 
@@ -196,7 +198,7 @@ document.querySelectorAll('.image-frame img').forEach(img => {
   wrap.addEventListener('click', () => { goTo(current + 1); resetTimer(); });
 
   resetTimer();
-})();
+});
 
 // ============================================
 // PHOTO CAROUSEL
