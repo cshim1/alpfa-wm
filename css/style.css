@@ -1039,6 +1039,18 @@ footer .logo-img {
 
 .marquee-logo:hover { opacity: 1; }
 
+.marquee-logo-dark {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(10) saturate(0);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.marquee-logo-dark:hover { opacity: 1; }
+
 .marquee-inner span {
   font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
