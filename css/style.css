@@ -133,13 +133,13 @@ body::before {
 .logo-text {
   font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--white);
   letter-spacing: -0.01em;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .logo-text em { color: var(--gold); font-style: italic; }
@@ -572,7 +572,7 @@ footer .logo-img {
   position: relative;
   z-index: 2;
   width: 100%;
-  padding: calc(var(--nav-h) + 60px) 48px 120px 72px;
+  padding: calc(var(--nav-h) + 20px) 48px 80px 120px;
   max-width: 1280px;
   margin: 0 auto;
   display: grid;
@@ -581,7 +581,7 @@ footer .logo-img {
   align-items: center;
 }
 
-.hero-text { display: flex; flex-direction: column; gap: 0; padding-left: 6px; }
+.hero-text { display: flex; flex-direction: column; gap: 0; }
 
 .hero-eyebrow {
   font-family: 'DM Sans', sans-serif;
