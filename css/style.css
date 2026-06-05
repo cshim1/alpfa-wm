@@ -815,7 +815,7 @@ footer .logo-img {
   width: 100%;
   overflow: hidden;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: -20px;
   position: relative;
   z-index: 1;
   pointer-events: none;
@@ -844,7 +844,7 @@ footer .logo-img {
 .mission-text-col {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   position: relative;
   z-index: 1;
 }
@@ -1522,13 +1522,13 @@ footer {
   gap: 60px;
 }
 
-.footer-brand { display: flex; flex-direction: column; gap: 16px; }
+.footer-brand { display: flex; flex-direction: column; gap: 10px; }
 
 .footer-brand p {
   font-size: 0.8rem;
-  line-height: 1.75;
+  line-height: 1.6;
   color: var(--white-faint);
-  max-width: 260px;
+  max-width: 200px;
 }
 
 .footer-col { display: flex; flex-direction: column; gap: 14px; }
