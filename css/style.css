@@ -1640,12 +1640,15 @@ footer .logo-img {
 }
 
 .intern-logo {
-  height: 40px;
+  height: 60px;
   width: auto;
-  max-width: 140px;
   object-fit: contain;
-  opacity: 0.75;
-  transition: opacity 0.2s;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 26px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
 }
 .intern-logo:hover { opacity: 1; }
 
