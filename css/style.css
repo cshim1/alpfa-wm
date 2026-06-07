@@ -2440,10 +2440,9 @@ footer .logo-text:hover { color: var(--white); }
 
   /* === GLOBAL === */
   .section { padding: 60px 20px !important; }
-  /* First section on pages needs nav clearance — restore it */
   main > section:first-child,
   main > div:first-child {
-    padding-top: calc(var(--nav-h) + 40px) !important;
+    padding-top: 48px !important;
   }
 
   /* === HOME === */
@@ -2453,7 +2452,7 @@ footer .logo-text:hover { color: var(--white); }
   }
   .hero-content {
     grid-template-columns: 1fr !important;
-    padding: calc(var(--nav-h) - 4px) 24px 48px !important;
+    padding: 40px 24px 48px !important;
     gap: 20px !important;
   }
   .hero-right-col {
@@ -2480,6 +2479,12 @@ footer .logo-text:hover { color: var(--white); }
   .orb-1, .orb-2 { display: none; }
 
   /* === NAV === */
+  #nav {
+    position: relative;
+    height: var(--nav-h);
+    padding-top: 0;
+  }
+  .mobile-nav { top: var(--nav-h); }
   .nav-inner { padding: 0 20px; }
 
   /* === ABOUT PAGE === */
