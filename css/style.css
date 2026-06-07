@@ -2495,7 +2495,9 @@ footer .logo-text:hover { color: var(--white); }
     gap: 24px !important;
   }
   .stay-loop-inner .btn { align-self: center; }
-  .events-grid { grid-template-columns: 1fr; }
+  .events-grid { grid-template-columns: 1fr; gap: 20px; margin-top: 32px; }
+  .events-grid .event-thumb { aspect-ratio: 5/2; }
+  .events-grid .event-body { padding: 20px; }
   .carousel-wrap { margin-top: 36px; }
   .carousel-caption { font-size: 0.78rem; }
 
