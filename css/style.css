@@ -2405,6 +2405,8 @@ footer .logo-text:hover { color: var(--white); }
   .value-item { padding: 0; border-bottom: 1px solid var(--gold-dim); padding-bottom: 24px; }
   .value-item:last-child { border-bottom: none; }
   .float-card { display: none; }
+  .mission-layout { gap: 24px !important; }
+  .section-deep { padding-top: 48px !important; padding-bottom: 48px !important; }
   html { cursor: auto; }
   .cursor-dot, .cursor-ring { display: none; }
   .about-fullbleed-inner { padding: 80px 28px; max-width: 100%; }
