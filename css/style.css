@@ -310,7 +310,7 @@ footer .logo-img {
   z-index: 9000;
   height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
   padding-top: env(safe-area-inset-top, 0px);
-  background: var(--glass);
+  background: var(--green-deep);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   border-bottom: 1px solid var(--gold-dim);
