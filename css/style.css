@@ -323,14 +323,16 @@ footer .logo-img {
 #nav::before {
   content: '';
   position: absolute;
-  top: calc(-1 * env(safe-area-inset-top, 0px));
+  top: 0;
   left: 0; right: 0;
   height: env(safe-area-inset-top, 0px);
   background: var(--green-deep);
-  z-index: 1;
+  z-index: 0;
 }
 
 .nav-inner {
+  position: relative;
+  z-index: 1;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 48px;
