@@ -2453,6 +2453,7 @@ footer .logo-text:hover { color: var(--white); }
   .hero-text {
     text-align: center;
     align-items: center;
+    padding-left: 0 !important;
   }
   .hero-eyebrow { text-align: center; }
   .hero-actions { justify-content: center; }
