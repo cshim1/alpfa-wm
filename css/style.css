@@ -311,24 +311,11 @@ footer .logo-img {
   height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
   padding-top: env(safe-area-inset-top, 0px);
   background: var(--green-deep);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
   border-bottom: 1px solid var(--gold-dim);
   transition: background 0.4s ease;
 }
 
-#nav.scrolled { background: rgba(8,28,18,0.97); }
-
-/* Fill the notch/status-bar zone with solid dark green at all times */
-#nav::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0; right: 0;
-  height: env(safe-area-inset-top, 0px);
-  background: var(--green-deep);
-  z-index: 0;
-}
+#nav.scrolled { background: var(--green-deep); }
 
 .nav-inner {
   position: relative;
