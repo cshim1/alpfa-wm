@@ -2412,6 +2412,111 @@ footer .logo-text:hover { color: var(--white); }
 }
 
 /* ============================================
+   MOBILE — COMPREHENSIVE OVERRIDES
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Tighten section padding on tablets */
+  .tiers-grid { grid-template-columns: repeat(2, 1fr); }
+  .sponsor-spotlight { padding: 36px 28px; }
+  .sponsor-cta-bar { padding: 28px 28px !important; }
+  .sponsor-lower-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+
+  /* === GLOBAL === */
+  .section { padding: 60px 20px !important; }
+
+  /* === HOME === */
+  .hero-content { padding: 100px 20px 64px !important; }
+  .hero-tagline { font-size: 0.9rem; }
+  .stats-bar { padding: 0; }
+  .stat-num { font-size: 2rem; }
+
+  /* === NAV === */
+  .nav-inner { padding: 0 20px; }
+
+  /* === ABOUT PAGE === */
+  .about-fullbleed-inner { padding: 72px 20px 64px !important; }
+  .about-fullbleed-inner h2 { font-size: clamp(1.8rem, 6vw, 2.8rem) !important; }
+  .board-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .board-card-img { height: 220px; }
+
+  /* === EVENTS PAGE === */
+  .stay-loop-inner {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 24px !important;
+  }
+  .stay-loop-inner .btn { align-self: center; }
+  .events-grid { grid-template-columns: 1fr; }
+  .carousel-wrap { margin-top: 36px; }
+  .carousel-caption { font-size: 0.78rem; }
+
+  /* === MEMBERSHIP PAGE === */
+  .intern-logo {
+    height: 48px !important;
+    padding: 8px 18px !important;
+    max-width: 110px;
+  }
+  .feature-grid { grid-template-columns: 1fr; }
+  .tiers-grid { grid-template-columns: 1fr; }
+
+  /* === SPONSORS PAGE === */
+  .sponsor-spotlight { padding: 28px 18px; }
+  .sponsor-spotlight-logos {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .sponsor-company-card { padding: 16px 28px; width: 100%; max-width: 260px; }
+  .sponsor-company-card-sm { padding: 14px 24px; }
+  .sponsor-company-img { height: 52px; }
+  .sponsor-company-img-sm { height: 40px; }
+  .sponsor-lower-grid { grid-template-columns: 1fr !important; }
+  .sponsor-tier-card { padding: 24px 18px; }
+  .sponsor-cta-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 24px 20px !important;
+    gap: 20px !important;
+  }
+  .sponsor-cta-bar .btn { width: 100%; text-align: center; }
+  .sponsor-tier-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+  .sponsor-tier-logos-col { gap: 12px; }
+  .sponsor-logo-pill { height: 48px; padding: 8px 18px; }
+  .sponsor-logo-lg { height: 56px; padding: 10px 22px; }
+
+  /* === TIER CARDS === */
+  .tier-card { padding: 28px 20px; }
+  .tier-perks-check li { font-size: 0.8rem; }
+
+  /* === FOOTER === */
+  .footer-inner { padding: 60px 20px 32px; }
+
+  /* === SECTION HEADINGS === */
+  h2 { font-size: clamp(1.8rem, 7vw, 3rem) !important; }
+
+  /* === BUTTONS === */
+  .hero-actions { gap: 12px; }
+
+  /* === CAROUSEL === */
+  .carousel-btn { width: 36px; height: 36px; }
+
+  /* === MEMBERSHIP FULLBLEED (How to Join) === */
+  #join .about-fullbleed-inner { padding: 80px 20px 60px !important; }
+
+  /* === INTERN PILLS ROW === */
+  .intern-pills-row { gap: 14px 20px !important; }
+}
+
+/* ============================================
    ACCESSIBILITY
    ============================================ */
 
