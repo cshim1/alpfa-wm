@@ -2433,6 +2433,11 @@ footer .logo-text:hover { color: var(--white); }
 
   /* === GLOBAL === */
   .section { padding: 60px 20px !important; }
+  /* First section on pages needs nav clearance — restore it */
+  main > section:first-child,
+  main > div:first-child {
+    padding-top: calc(var(--nav-h) + 40px) !important;
+  }
 
   /* === HOME === */
   .hero {
@@ -2472,7 +2477,7 @@ footer .logo-text:hover { color: var(--white); }
   /* === ABOUT PAGE === */
   .about-fullbleed-inner { padding: 72px 20px 64px !important; }
   .about-fullbleed-inner h2 { font-size: clamp(1.8rem, 6vw, 2.8rem) !important; }
-  .board-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .board-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 8px; }
   .board-card-img { height: 220px; }
 
   /* === EVENTS PAGE === */
