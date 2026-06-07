@@ -37,6 +37,7 @@ html {
   font-size: 16px;
   cursor: none;
   overflow-x: hidden;
+  background: var(--green-deep);
 }
 
 body {
@@ -2452,7 +2453,7 @@ footer .logo-text:hover { color: var(--white); }
   }
   .hero-content {
     grid-template-columns: 1fr !important;
-    padding: calc(var(--nav-h) + 8px) 24px 48px !important;
+    padding: calc(var(--nav-h) - 4px) 24px 48px !important;
     gap: 20px !important;
   }
   .hero-right-col {
@@ -2460,6 +2461,7 @@ footer .logo-text:hover { color: var(--white); }
     order: -1;
     justify-content: center;
     padding-left: 0 !important;
+    margin-left: 24px !important;
   }
   .hero-text {
     text-align: center;
