@@ -2441,10 +2441,16 @@ footer .logo-text:hover { color: var(--white); }
   }
   .hero-right-col {
     display: flex !important;
-    order: -1;
+    order: 1;
     justify-content: center;
     padding-left: 0 !important;
   }
+  .hero-text {
+    text-align: center;
+    align-items: center;
+  }
+  .hero-eyebrow { text-align: center; }
+  .hero-actions { justify-content: center; }
   .hero-logo-img {
     max-width: 220px !important;
     animation: none;
