@@ -598,6 +598,8 @@ footer .logo-img {
 
 .hero-text { display: flex; flex-direction: column; gap: 0; }
 
+.mission-label { margin-top: 80px; }
+
 .hero-eyebrow {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.58rem;
@@ -2405,8 +2407,11 @@ footer .logo-text:hover { color: var(--white); }
   .value-item { padding: 0; border-bottom: 1px solid var(--gold-dim); padding-bottom: 24px; }
   .value-item:last-child { border-bottom: none; }
   .float-card { display: none; }
-  .mission-layout { gap: 24px !important; }
+  .mission-layout { gap: 20px !important; }
   .section-deep { padding-top: 48px !important; padding-bottom: 48px !important; }
+  .mission-label { margin-top: 0 !important; }
+  .hero-eyebrow { justify-content: center; }
+  .hero-eyebrow::before, .hero-eyebrow::after { display: none; }
   html { cursor: auto; }
   .cursor-dot, .cursor-ring { display: none; }
   .about-fullbleed-inner { padding: 80px 28px; max-width: 100%; }
