@@ -307,7 +307,8 @@ footer .logo-img {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 9000;
-  height: var(--nav-h);
+  height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
   background: var(--glass);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
@@ -410,7 +411,7 @@ footer .logo-img {
 .mobile-nav {
   display: flex;
   position: fixed;
-  top: var(--nav-h);
+  top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
   left: 0; right: 0;
   background: rgba(8,28,18,0.98);
   backdrop-filter: blur(20px);
@@ -2451,8 +2452,8 @@ footer .logo-text:hover { color: var(--white); }
   }
   .hero-content {
     grid-template-columns: 1fr !important;
-    padding: calc(var(--nav-h) + 32px) 24px 64px !important;
-    gap: 32px !important;
+    padding: calc(var(--nav-h) + 8px) 24px 48px !important;
+    gap: 20px !important;
   }
   .hero-right-col {
     display: flex !important;
