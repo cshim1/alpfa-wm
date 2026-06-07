@@ -36,6 +36,7 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   cursor: none;
+  overflow-x: hidden;
 }
 
 body {
@@ -514,7 +515,7 @@ footer .logo-img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  overflow: visible;
+  overflow: hidden;
   background: var(--green-deep);
 }
 
@@ -2429,10 +2430,29 @@ footer .logo-text:hover { color: var(--white); }
   .section { padding: 60px 20px !important; }
 
   /* === HOME === */
-  .hero-content { padding: 100px 20px 64px !important; }
+  .hero {
+    overflow: hidden;
+    min-height: auto;
+  }
+  .hero-content {
+    grid-template-columns: 1fr !important;
+    padding: calc(var(--nav-h) + 32px) 24px 64px !important;
+    gap: 32px !important;
+  }
+  .hero-right-col {
+    display: flex !important;
+    order: -1;
+    justify-content: center;
+    padding-left: 0 !important;
+  }
+  .hero-logo-img {
+    max-width: 220px !important;
+    animation: none;
+  }
   .hero-tagline { font-size: 0.9rem; }
   .stats-bar { padding: 0; }
   .stat-num { font-size: 2rem; }
+  .orb-1, .orb-2 { display: none; }
 
   /* === NAV === */
   .nav-inner { padding: 0 20px; }
