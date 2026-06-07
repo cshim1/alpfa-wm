@@ -408,7 +408,7 @@ footer .logo-img {
    ============================================ */
 
 .mobile-nav {
-  display: none;
+  display: flex;
   position: fixed;
   top: var(--nav-h);
   left: 0; right: 0;
@@ -420,15 +420,18 @@ footer .logo-img {
   flex-direction: column;
   gap: 18px;
   z-index: 8999;
-  transform: translateY(-8px);
+  transform: translateY(-12px);
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
 .mobile-nav.open {
-  display: flex;
   opacity: 1;
   transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .mobile-nav a {
@@ -2441,7 +2444,7 @@ footer .logo-text:hover { color: var(--white); }
   }
   .hero-right-col {
     display: flex !important;
-    order: 1;
+    order: -1;
     justify-content: center;
     padding-left: 0 !important;
   }
